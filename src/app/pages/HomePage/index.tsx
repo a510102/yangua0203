@@ -9,7 +9,7 @@ export function Home() {
 	return (
 		<>
 			<Helmet>
-				<title>YanGua0203</title>
+				<title>台中研光堂眼鏡 - HomePage</title>
 			</Helmet>
 			<Banner />
 			<HomeMain>
