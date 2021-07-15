@@ -8,6 +8,6 @@ export const BannerWrap = styled.div`
 	align-items: center;
 	font-size: 1.1rem;
 	font-weight: 500;
-	background: #00FF00;
+	background: #00A600;
 	overflow-x: auto;
 `;

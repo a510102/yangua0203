@@ -8,7 +8,6 @@ import { HeaderNav } from './components/HeaderNav';
 import Home from './pages/HomePage/loadable';
 import About from './pages/About/loadable';
 import Connect from './pages/Connect/loadable';
-import FAQ from './pages/FAQ/loadable';
 import NotFound from './pages/NotFound/loadable';
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/connect' component={Connect} />
-          <Route path='/faq' component={FAQ} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

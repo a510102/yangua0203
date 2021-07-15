@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeMain = styled.main`
+export const PageMain = styled.main`
 	width: 90%;
 	min-width: 900px;
 	margin: auto;

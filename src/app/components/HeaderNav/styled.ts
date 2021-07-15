@@ -5,15 +5,15 @@ export const NavLink = styled(Link)`
 	font-size: 1.1rem;
 	font-weight: 500;
 	text-decoration: none;
-	color: unset;
+	color: #007500;
 	padding: 2px 4px;
-	border: 1px solid #000;
+	border: 1px solid #007500;
 	border-radius: 8px;
 	margin: 0 2px;
 	outline: none;
 	:hover {
 		color: #fff;
-		background: #000;
+		background: #007500;
 	}
 `;
 

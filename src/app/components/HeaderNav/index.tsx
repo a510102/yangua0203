@@ -8,7 +8,6 @@ export const HeaderNav = () => (
 			</HeaderLogo>
 			<div>
 				<NavLink to='/about'>About me</NavLink>
-				<NavLink to='/faq'>FAQ</NavLink>
 				<NavLink to='/connect'>Connect me</NavLink>
 			</div>
 		</NavWrapper>

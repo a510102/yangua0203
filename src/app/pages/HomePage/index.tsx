@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 import Banner from './Feature/Banner';
-import { HomeMain } from './components/HomeMain';
-import { HomeTitle } from './components/HomeTitle';
+import { PageMain } from '../../components/PageMain';
+import { PageTitle } from '../../components/PageTitle';
 import { Footer } from './Feature/Footer';
 
 export function Home() {
@@ -12,10 +12,10 @@ export function Home() {
 				<title>台中研光堂眼鏡 - HomePage</title>
 			</Helmet>
 			<Banner />
-			<HomeMain>
-				<HomeTitle>Home Page</HomeTitle>
+			<PageMain>
+				<PageTitle>Home Page</PageTitle>
 				<p>Content...</p>
-			</HomeMain>
+			</PageMain>
 			<Footer />
 		</>
 	)
