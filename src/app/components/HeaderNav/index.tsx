@@ -1,15 +1,16 @@
-import { NavLink, HeaderWrapper, NavWrapper, HeaderLogo, LogoLink } from './styled';
-
-export const HeaderNav = () => (
-	<HeaderWrapper>
-		<NavWrapper>
-			<HeaderLogo>
-				<LogoLink to='/'>研光堂</LogoLink>
-			</HeaderLogo>
-			<div>
-				<NavLink to='/about'>About me</NavLink>
-				<NavLink to='/connect'>Connect me</NavLink>
-			</div>
-		</NavWrapper>
-	</HeaderWrapper>
-)
+import { HeaderWrapper, HeaderLogo, HeaderButtons, HeaderLinkButton, HeaderMenuButton } from './styledComponents';
+import Logo from '../../../icon/Logo.svg';
+export function HeaderNav() {
+  return (
+    <HeaderWrapper>
+      <HeaderLogo src={Logo} alt='Logo' />
+      <HeaderButtons>
+        <HeaderMenuButton></HeaderMenuButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+      </HeaderButtons>
+    </HeaderWrapper>
+  )
+}
