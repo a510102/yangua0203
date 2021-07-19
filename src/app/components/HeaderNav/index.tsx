@@ -1,9 +1,24 @@
-import { HeaderWrapper, HeaderLogo, HeaderButtons, HeaderLinkButton, HeaderMenuButton } from './styledComponents';
+import { useHistory } from 'react-router-dom';
+
+import {
+  HeaderWrapper,
+  HeaderLogo,
+  HeaderButtons,
+  HeaderLinkButton,
+  HeaderMenuButton,
+  HeaderTitle
+} from './styledComponents';
 import Logo from '../../../icon/Logo.svg';
+
 export function HeaderNav() {
+  const history = useHistory();
+
   return (
     <HeaderWrapper>
-      <HeaderLogo src={Logo} alt='Logo' />
+      <HeaderTitle onClick={() => history.push('/')}>
+        <HeaderLogo src={Logo} alt='Logo' />
+        研光堂
+      </HeaderTitle>
       <HeaderButtons>
         <HeaderMenuButton></HeaderMenuButton>
         <HeaderLinkButton to='/'>Button</HeaderLinkButton>
