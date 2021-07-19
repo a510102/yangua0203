@@ -1,7 +1,7 @@
-export const NotFound = () => {
-	return (
-		<main>
-			<h2>NotFound</h2>
-		</main>
-	)
-}
+export function NotFound() {
+  return (
+    <main>
+      <h3>404 Not Found</h3>
+    </main>
+  )
+};

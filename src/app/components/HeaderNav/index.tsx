@@ -1,15 +1,31 @@
-import { NavLink, HeaderWrapper, NavWrapper, HeaderLogo, LogoLink } from './styled';
+import { useHistory } from 'react-router-dom';
 
-export const HeaderNav = () => (
-	<HeaderWrapper>
-		<NavWrapper>
-			<HeaderLogo>
-				<LogoLink to='/'>研光堂</LogoLink>
-			</HeaderLogo>
-			<div>
-				<NavLink to='/about'>About me</NavLink>
-				<NavLink to='/connect'>Connect me</NavLink>
-			</div>
-		</NavWrapper>
-	</HeaderWrapper>
-)
+import {
+  HeaderWrapper,
+  HeaderLogo,
+  HeaderButtons,
+  HeaderLinkButton,
+  HeaderMenuButton,
+  HeaderTitle
+} from './styledComponents';
+import Logo from '../../../icon/Logo.svg';
+
+export function HeaderNav() {
+  const history = useHistory();
+
+  return (
+    <HeaderWrapper>
+      <HeaderTitle onClick={() => history.push('/')}>
+        <HeaderLogo src={Logo} alt='Logo' />
+        研光堂
+      </HeaderTitle>
+      <HeaderButtons>
+        <HeaderMenuButton></HeaderMenuButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+      </HeaderButtons>
+    </HeaderWrapper>
+  )
+}
