@@ -5,7 +5,7 @@ import GlobalStyle from '../styles/globalStyles';
 import DefaultStyled from '../styles/defaultStyle';
 import { HeaderNav } from './components/HeaderNav';
 import { Banner } from './components/Banner';
-import { Map } from './components/Map';
+import { StoreInfo } from './components/StoreInfo';
 import { Footer } from './components/Footer';
 import Home from './pages/Home/Loadable';
 import NotFound from './pages/NotFound/Loadable';
@@ -37,7 +37,7 @@ function App() {
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
-      <Map />
+      <StoreInfo />
       <Footer />
     </div>
   );
