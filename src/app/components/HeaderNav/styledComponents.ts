@@ -11,9 +11,20 @@ export const HeaderWrapper = styled.header`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
-export const HeaderLogo = styled.img`
+export const HeaderTitle = styled.h1`
+  position: relative;
+  height: 62px;
   width: 155px;
+  text-align: center;
+  cursor: pointer;
+`;
+
+export const HeaderLogo = styled.img`
+  width: 100%;
   height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
   object-fit: contain;
 `;
 
@@ -29,12 +40,13 @@ export const HeaderLinkButton = styled(Link)`
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
-  color: #0F5E74;
-  border: 1px solid #0F5E74;
-  border-radius: 16px;
+  color: #005d74;
+  border: 1px solid #005d74;
+  border-radius: 8px;
   :hover,
   :active{
-    background-color: #0F5E74;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #005d74;
     color: #fff;
   }
 `;
