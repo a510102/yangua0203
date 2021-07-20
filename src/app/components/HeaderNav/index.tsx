@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 import {
   HeaderWrapper,
@@ -12,6 +12,7 @@ import Logo from '../../../icon/Logo.svg';
 
 export function HeaderNav() {
   const history = useHistory();
+  const { pathname } = useLocation();
 
   return (
     <HeaderWrapper>
@@ -21,7 +22,7 @@ export function HeaderNav() {
       </HeaderTitle>
       <HeaderButtons>
         <HeaderMenuButton></HeaderMenuButton>
-        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton $isActive={pathname === '/memberinfo'} to='/memberinfo'>Member Info</HeaderLinkButton>
         <HeaderLinkButton to='/'>Button</HeaderLinkButton>
         <HeaderLinkButton to='/'>Button</HeaderLinkButton>
         <HeaderLinkButton to='/'>Button</HeaderLinkButton>

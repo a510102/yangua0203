@@ -9,6 +9,7 @@ import { StoreInfo } from './components/StoreInfo';
 import { Footer } from './components/Footer';
 import Home from './pages/Home/Loadable';
 import NotFound from './pages/NotFound/Loadable';
+import MemberInfo from './pages/MemberInfo/Loadable';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Banner />
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route path='/memberinfo' component={MemberInfo} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
