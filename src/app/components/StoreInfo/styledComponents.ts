@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StoreInfoWrapper = styled.section`
   display: flex;
-  padding: 16px 60px;
+	justify-content: center;
+  padding: 16px 0;
 `;
 
 export const StoreMap = styled.iframe`

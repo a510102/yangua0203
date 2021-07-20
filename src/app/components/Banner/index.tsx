@@ -10,7 +10,7 @@ export function Banner() {
         setIsClick(false);
       }, 500)
     } else {
-      setTimeout(() => setCurrentBanner(currentBanner !== 1 ? 1 : currentBanner +1), 3000);
+      setTimeout(() => setCurrentBanner(currentBanner !== 1 ? 1 : currentBanner +1), 5000);
     }
   }, [isClick, currentBanner])
 
