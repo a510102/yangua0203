@@ -33,14 +33,20 @@ export const HeaderButtons = styled.div`
   align-items: center;
 `;
 
-export const HeaderLinkButton = styled(Link)`
+interface HeaderLinkButtonProps {
+  $isActive?: boolean;
+}
+
+export const HeaderLinkButton = styled(Link)<HeaderLinkButtonProps>`
   margin: 0 4px;
   padding: 8px 8px;
   font-size: 1.1rem;
   font-weight: 500;
-  cursor: pointer;
   text-decoration: none;
-  color: #005d74;
+  cursor: ${props => props.$isActive? 'default' : 'pointer'};
+  color: ${props => props.$isActive? '#fff' : '#005d74'};
+  background: ${props => !props.$isActive? '#fff' : '#005d74'};
+  box-shadow: ${props => props.$isActive? '0px 4px 4px rgba(0, 0, 0, 0.25)' : 'none'};
   border: 1px solid #005d74;
   border-radius: 8px;
   :hover,
