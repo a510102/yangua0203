@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import Home from './pages/Home/Loadable';
 import NotFound from './pages/NotFound/Loadable';
 import MemberInfo from './pages/MemberInfo/Loadable';
+import Brand from './pages/Brand/Loadable';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/memberinfo' component={MemberInfo} />
+          <Route path='/brand' component={Brand} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
