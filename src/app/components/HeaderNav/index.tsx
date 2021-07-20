@@ -23,7 +23,7 @@ export function HeaderNav() {
       <HeaderButtons>
         <HeaderMenuButton></HeaderMenuButton>
         <HeaderLinkButton $isActive={pathname === '/memberinfo'} to='/memberinfo'>Member Info</HeaderLinkButton>
-        <HeaderLinkButton to='/'>Button</HeaderLinkButton>
+        <HeaderLinkButton $isActive={pathname === '/brand'} to='/brand'>Button</HeaderLinkButton>
         <HeaderLinkButton to='/'>Button</HeaderLinkButton>
         <HeaderLinkButton to='/'>Button</HeaderLinkButton>
       </HeaderButtons>
