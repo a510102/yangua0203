@@ -33,7 +33,7 @@ const Brand = styled.div`
 	font-weight: 500;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 	transition: all 0.3s ease-in;
-	:hover {
+	&:hover {
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 		transform: scale(1.1);
 	}

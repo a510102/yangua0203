@@ -49,8 +49,8 @@ export const HeaderLinkButton = styled(Link)<HeaderLinkButtonProps>`
   box-shadow: ${props => props.$isActive? '0px 4px 4px rgba(0, 0, 0, 0.25)' : 'none'};
   border: 1px solid #005d74;
   border-radius: 8px;
-  :hover,
-  :active{
+  &:hover,
+  &:active{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #005d74;
     color: #fff;
