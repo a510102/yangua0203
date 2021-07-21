@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { button } from '../../../styles/variables';
+
+const { default: defaultButton, hover } = button;
 
 export const HeaderWrapper = styled.header`
   width: 100%;
@@ -44,16 +47,16 @@ export const HeaderLinkButton = styled(Link)<HeaderLinkButtonProps>`
   font-weight: 500;
   text-decoration: none;
   cursor: ${props => props.$isActive? 'default' : 'pointer'};
-  color: ${props => props.$isActive? '#fff' : '#005d74'};
-  background: ${props => !props.$isActive? '#fff' : '#005d74'};
+  color: ${props => props.$isActive? hover.text : defaultButton.text};
+  background: ${props => props.$isActive? hover.bg : defaultButton.bg};
   box-shadow: ${props => props.$isActive? '0px 4px 4px rgba(0, 0, 0, 0.25)' : 'none'};
-  border: 1px solid #005d74;
+  border: 1px solid ${defaultButton.border};
   border-radius: 8px;
   &:hover,
   &:active{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #005d74;
-    color: #fff;
+    background: ${hover.bg};
+    color: ${hover.text};
   }
 `;
 
