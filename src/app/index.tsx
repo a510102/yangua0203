@@ -7,6 +7,7 @@ import { HeaderNav } from './components/HeaderNav';
 import { Banner } from './components/Banner';
 import { StoreInfo } from './components/StoreInfo';
 import { Footer } from './components/Footer';
+import { ScrollTop } from './components/ScrollTop';
 import Home from './pages/Home/Loadable';
 import NotFound from './pages/NotFound/Loadable';
 import MemberInfo from './pages/MemberInfo/Loadable';
@@ -43,6 +44,7 @@ function App() {
       </BrowserRouter>
       <StoreInfo />
       <Footer />
+      <ScrollTop />
     </div>
   );
 }
